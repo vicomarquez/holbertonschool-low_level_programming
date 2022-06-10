@@ -17,7 +17,7 @@ int print_sign(int n)
 		return (1);
 	} else if (n == 0)
 	{
-		_puthcar(48);
+		_putchar(48);
 		return (0);
 	} else if (n < 0)
 	{
