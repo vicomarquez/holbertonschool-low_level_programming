@@ -5,16 +5,18 @@
  * Return: Always 0 (Success)
  */
 
+
+
 void print_alphabet_x10(void)
 {
 	int y;
-	char x; 
-	for (y = 0 ; y < 10 ; y++)
-		for (x = 'a' ; x <= 'z' ; x++)
+	char x;
+	for (y = 1 ; y <= 10 ; y++)
+	{
+		for  ( x = 'a' ; x <= 'z' ; x++)
 	{
 		_putchar(x);
-		x++;
-	
+	}
 	_putchar('\n');
 	}
 }
