@@ -15,12 +15,12 @@ int print_sign(int n)
 		return (1);
 	}
 	
-	else if(n = 0);
+	if else(n = 0);
 	{
 		puthcar('0');
 		return (0);
 	}
-	else if(n < 0);
+	else(n < 0);
 	{
 		putchar('-');
 		return ('-'1);
