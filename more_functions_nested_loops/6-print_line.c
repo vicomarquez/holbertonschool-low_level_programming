@@ -2,6 +2,7 @@
 /**
  *print_line - draws a straight line in the terminal
  *_putchar - adds a new line
+ *@n: chracter to check
  *Return: always 0
 */
 
