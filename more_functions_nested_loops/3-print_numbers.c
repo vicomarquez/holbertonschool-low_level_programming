@@ -2,7 +2,6 @@
 /**
  *print_numbers - multiplies two integers
  *_putchar - adds a new line
- *@x: integer
  *Return: always 0
 */
 
@@ -16,5 +15,4 @@ void print_numbers(void)
 	}
 		
 		_putchar('\n');
-
 }
