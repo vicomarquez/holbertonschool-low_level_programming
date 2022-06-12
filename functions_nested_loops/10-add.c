@@ -3,6 +3,7 @@
 /**
  * add - adds two integers
  * @x: the int to check
+ * @y: the int to check
  * Return: the result
  */
 int add(int x, int y)
