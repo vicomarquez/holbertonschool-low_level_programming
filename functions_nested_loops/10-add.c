@@ -5,7 +5,7 @@
  * @x: the int to check
  * Return: the result
  */
-int add(int x, int y);
+int add(int x, int y)
 {
 	x += y;
 	return (x);
