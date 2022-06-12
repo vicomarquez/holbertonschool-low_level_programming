@@ -2,7 +2,7 @@
 /**
  *print_square - prints a square
  *_putchar - adds a new line
- *@n: chracter to check
+ *@size: value to check
  *Return: always 0
 */
 
