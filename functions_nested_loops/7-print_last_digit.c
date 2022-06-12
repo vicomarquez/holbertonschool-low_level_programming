@@ -7,10 +7,15 @@
  */
 int print_last_digit(int x)
 {
-	while (x >= 10)
-		x /= 10;
+	if (x <= -4269812251)
+		x = 1;
+	else 
 	{
-		return (x % 10);
+		if (x < 0)
+			x = -1 * x;
+		x = x % 10;
 	}
+	putchar(x + '0');
+	return (x);
 }
 
