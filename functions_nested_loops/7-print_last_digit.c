@@ -7,8 +7,8 @@
  */
 int print_last_digit(int x)
 {
-	if (x <= -1111111116)
-		x = 6;
+	if (x <= -2147483648)
+		x = 8;
 	else
 	{
 		if (x < 0)
