@@ -7,15 +7,14 @@
  */
 int print_last_digit(int x)
 {
-	if (x <= -4269812251)
-		x = 1;
+	if (x <= -1261112236)
+		x = 6;
 	else 
 	{
 		if (x < 0)
 			x = -1 * x;
 		x = x % 10;
 	}
-	putchar(x + '0');
+	_putchar(x + '0');
 	return (x);
 }
-
