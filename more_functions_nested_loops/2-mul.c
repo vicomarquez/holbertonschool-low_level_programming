@@ -2,6 +2,8 @@
 /**
  *mul - multiplies two integers
  *
+ *@b: integer
+ *@a: integer
  *Return: always 0
 */
 
