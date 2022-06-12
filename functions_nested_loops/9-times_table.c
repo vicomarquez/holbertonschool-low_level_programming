@@ -7,12 +7,37 @@
  */
 void times_table(void)
 {
-	int a, b;
+	int x, y, z;
+	char ab, cd;
 
-	for a in range(0, 9):
+	for (x = 0 ; x <= 9 ; x++)
 	{
-		for b in range(a, (i*9)+1, a):
-			print(b, end="\t")
-			print()
+		for (y = 0 ; y <= 9 ; y++)
+		{
+			z = x * i;
+			if (z >= 10)
+			{
+				ab = (z % 10) + '0';
+				cd = z;
+				while (cd >= 10)
+					cd = (cd / 10);
+				cd = cd + '0';
+			}
+			else
+			{
+				ab = z + '0';
+				cd = ' ';
+			}
+			if (y != 0)
+			{
+				_putchar(' ');
+				_putchar(cd);
+			}
+			_putchar(ab);
+			if (y != 9)
+				_putchar(',');
+			else
+				_putchar('\n');
+		}
 	}
 }
