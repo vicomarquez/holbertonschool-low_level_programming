@@ -3,7 +3,6 @@
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
- * @x: the int to check
  * @n: the int to check
  * Return: void
  */
