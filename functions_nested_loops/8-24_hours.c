@@ -2,10 +2,7 @@
 
 /**
  * jack_bauer - prints every minute of the day
- * @a: hours
- * @b: hours
- * @c: minutes
- * @d: minutes
+ * 
  * Return: 0
  */
 void jack_bauer(void)
