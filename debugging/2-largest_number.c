@@ -13,7 +13,7 @@ int largest_number(int x, int y, int z)
 
 	if ((x > y && x > z) || (x == y && x > z))
 		lr = x;
-	else if (( y > x && y > z) || (y == z && y > x))
+	else if ((y > x && y > z) || (y == z && y > x))
 		lr = y;
 	else
 		lr = z;
