@@ -1,2 +1,2 @@
 Hi!
-Here you will find C - Debugging information!
+Here you will find C debbuging information :)
