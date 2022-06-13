@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * main - does something
- *_putchar - adds a new line
- *@size: value to check
+ *
  *Return: always 0
 */
 
