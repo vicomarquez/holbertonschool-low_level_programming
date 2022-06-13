@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -14,8 +15,8 @@ void print_remaining_days(int x, int y, int z)
 	{
 		if (x > 2 && y >= 60)
 			y++;
-	printf("Day of the year: %d\n", day);
-	printf("Remaining days: %d\n", 366 - day);
+	printf("Day of the year: %d\n", y);
+	printf("Remaining days: %d\n", 366 - y);
 	}
 	else 
 	{
