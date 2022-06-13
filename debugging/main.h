@@ -21,3 +21,4 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 positive_or_negative();
+int largest_number()
