@@ -22,7 +22,7 @@ void print_triangle(int size)
 		for (c = 0; c < b ; c++)
 		{
 			if ((a + c) >= (size - c))
-			_putchar('#');
+				_putchar('#');
 			else
 				_putchar(' ');
 	}
