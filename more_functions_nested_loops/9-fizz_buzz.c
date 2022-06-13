@@ -17,18 +17,18 @@ int main(void)
 			if (!(a % 5))
 				printf(" FizzBuzz");
 			else
-			printf(" Fizz")
+			printf(" Fizz");
 	}
 	else if (!(a % 5) && a % 3)
 		printf(" Buzz");
 	else
 	{
 		if (a > 1)
-			printf(" %ld", a);
+			printf(" %d", a);
 		else
-			printf("%ld", a);
+			printf("%d", a);
 	}
 	}
-		_putchar('\n');
+		putchar('\n');
 		return (0);
 }
