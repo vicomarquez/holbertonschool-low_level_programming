@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *_strlen - returns the length of a string
+ * _strlen - returns the length of a string
  *@s: character to check
- *@l: character to check
  */
 int _strlen(char *s)
 {
@@ -13,5 +12,5 @@ int _strlen(char *s)
 		l++;
 		s++;
 	}
-	return l;
+	return (l);
 }
