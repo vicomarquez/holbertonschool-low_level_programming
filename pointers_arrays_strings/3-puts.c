@@ -4,15 +4,14 @@
  *@s: character to check
  *Return: the length of a string
  */
-void _puts(char *str)
+void _puts(char *s)
 {
-	int l = 0;
+	int l;
 
-	for(l = 0 ; s[l] != '\0' ; l++)
+	for(l = 0; s[l] != '\0' ; l++)
 	{
 		_putchar(s[l]);
-		l++:
+		l++;
 	}
 	_putchar('\n');
-	return (0);
 }
