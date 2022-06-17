@@ -6,17 +6,17 @@
  */
 void rev_string(char *s)
 {
-	int i;
 	int j = 0;
 	int length = _strlen(s);
-	int k = length -1;
-	char b;
+	int k = length - 1;
+	char a, b;
 
-	for (i = j ; i < k ; i++)
+	for (k = length -1 ; k >= j ; j++)
 	{
-		b = s[i];
-		s[i] = s[k];
+		a = s[j];
+		b = s[k];
 		s[k] = b;
+		s[j] = a;
 		k--;
 	}
 	_putchar ('\n');
