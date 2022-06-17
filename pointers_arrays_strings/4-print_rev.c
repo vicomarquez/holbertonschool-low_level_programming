@@ -16,7 +16,9 @@ void print_rev(char *s)
 	}
 	_putchar ('\n');
 }
-
+/**
+ * _strlen - shows length of a string
+ */
 int _strlen(char *s)
 {
 	int l;
