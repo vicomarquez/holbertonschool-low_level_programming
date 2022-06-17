@@ -18,6 +18,8 @@ void print_rev(char *s)
 }
 /**
  * _strlen - shows length of a string
+ * @s: character to check
+ * Return: length of string
  */
 int _strlen(char *s)
 {
