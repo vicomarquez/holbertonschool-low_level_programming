@@ -17,7 +17,6 @@ void rev_string(char *s)
 		b = s[k];
 		s[k] = b;
 		s[j] = a;
-		k--;
 	}
 	_putchar ('\n');
 }
