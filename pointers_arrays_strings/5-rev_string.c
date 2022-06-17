@@ -19,7 +19,6 @@ void rev_string(char *s)
 		s[j] = b;
 		k--;
 	}
-	_putchar ('\n');
 }
 /**
  * _strlen - shows length of a string
