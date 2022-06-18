@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - prints half of a string
- *@s: character to check
+ *@str: character to check
  *Return: the length of a string
  */
 void puts_half(char *str)
@@ -9,9 +9,9 @@ void puts_half(char *str)
 	int a, b;
 	int length = _strlen(str);
 
-	if (length % 2)
+	if (!(length % 2))
 		a = 0;
-	else 
+	else
 		a = 1;
 	length /= 2;
 	b = a;
