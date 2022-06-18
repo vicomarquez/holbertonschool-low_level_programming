@@ -3,6 +3,7 @@
 /**
  * print_array - prints elements of an array
  *@a: character to check
+ *@n: integer
  *Return: the length of a string
  */
 void print_array(int *a, int n)
