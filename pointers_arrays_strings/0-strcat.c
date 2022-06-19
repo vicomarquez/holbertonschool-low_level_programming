@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * *_strcpy - copies a string
+ * *_strcat - copies a string
  *@dest: character to check
  *@src: character to check
  *Return: the length of a string
  */
-char *_strcpy(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int a = 0;
 	int b = 0;
