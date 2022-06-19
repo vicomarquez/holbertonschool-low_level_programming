@@ -5,12 +5,10 @@
  *@src: character to check
  *Return: the length of a string
  */
-int *strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int a = 0;
 	int length = _strlen(src);
-
-	length++;
 
 	while (a < length)
 	{
