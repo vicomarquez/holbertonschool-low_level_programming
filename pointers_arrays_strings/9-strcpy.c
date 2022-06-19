@@ -5,12 +5,12 @@
  *@src: character to check
  *Return: the length of a string
  */
-void puts_half(char *dest, char *src)
+int *strcpy(char *dest, char *src)
 {
 	int a = 0;
-	int length = _strlen(str);
+	int length = _strlen(src);
 
-	while (i < length)
+	while (a < length)
 	{
 		dest[a] = src[a];
 		a++;
