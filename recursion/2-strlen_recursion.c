@@ -9,15 +9,15 @@
 
 int _strlen_recursion(char *s)
 {
-	static int count = 0;
+	int l = 0;
 
 	if (*s != '\0')
 	{
-		count++;
+		l++;
 		_strlen_recursion(++s);
 	}
 	else
 	{
-		return count;
+		return (l);
 	}
 }
