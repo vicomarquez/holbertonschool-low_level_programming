@@ -14,7 +14,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		a++;
 	}
-	while (src[b] != '\0')
+	while (src[b] != '\0' && b < n)
 	{
 		dest[a] = src[b];
 		a++;
@@ -23,18 +23,3 @@ char *_strncat(char *dest, char *src, int n)
 	dest[a] = '\0';
 	return (dest);
 }
-/**
- * _strlen - shows length of a string
- * @s: character to check
- * Return: length of string
- */
-int _strlen(char *s)
-{
-	int l;
-
-	for (l = 0 ; s[l] != '\0' ; l++)
-	{
-	}
-	return (l);
-}
-
