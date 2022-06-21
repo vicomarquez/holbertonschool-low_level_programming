@@ -3,6 +3,7 @@
  **_strncat - copies a string
  *@dest: character to check
  *@src: character to check
+ *@n: integer
  *Return: the length of a string
  */
 char *_strncat(char *dest, char *src, int n)
