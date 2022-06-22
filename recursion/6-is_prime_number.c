@@ -34,7 +34,7 @@ int is_prime_number(int n)
  */
 void _rec(int *p, int j)
 {
-	if (*p % j != 0 && 2 * j < n)
+	if (*p % j != 0 && 2 * j < *p)
 	{
 		j++;
 		_rec(p, j);
