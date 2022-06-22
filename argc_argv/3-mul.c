@@ -12,9 +12,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = 0;
-	int b = 0;
-	int c = 0;	
+	long j;
+	long k;	
 
 	if (argc < 3)
 	{
@@ -23,10 +22,9 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		c = a * b;
-		a = strtol(argv[1], NULL, 10);
-		b = strtol(argv[2], NULL, 10);
-		printf("%d\n", c);
+		j = strtol(argv[1], NULL, 10);
+		k = strtol(argv[2], NULL, 10);
+		printf("%d\n", j * k);
 		return (0);
 	}
 }
