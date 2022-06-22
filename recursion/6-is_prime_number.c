@@ -17,8 +17,10 @@ int is_prime_number(int n)
 	p = &y;
 
 	if (y < 0)
-		y = -1;
+		y = 0;
 	else if (y == 0)
+		y = 0;
+	else if (y == 1)
 		y = 0;
 	else
 		_rec(p, 2);
