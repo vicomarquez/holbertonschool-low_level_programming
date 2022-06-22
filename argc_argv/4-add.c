@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	while (c = 1; c < argc ; c++)
+	for (c = 1 ; c < argc ; c++)
 	{
 		j += strtol(argv[c], &b, 10);
 		if (*b != '\0')
