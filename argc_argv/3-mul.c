@@ -12,8 +12,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int a;
-	int b;
+	int a = 0
+	int b = 0
 	int c;	
 
 	if (argc < 3)
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	{
 		c = a * b;
 		a = strtol(argv[1], NULL, 10);
-		b = strol(argv[2], NULL, 10);
+		b = strtol(argv[2], NULL, 10);
 		printf("%d\n", c);
 		return (0);
 	}
