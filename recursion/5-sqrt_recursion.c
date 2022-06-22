@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 
 	if (y < 0)
 		return (-1);
-	if (y == 0)
+	else if (y == 0)
 		return (0);
 	else
 		_rec(p, 1);
@@ -41,7 +41,6 @@ void _rec(int *p, int j)
 	}
 	else if (j * j == *p)
 		*p = j;
-	else 
+	else
 		*p = -1;
-	return;
 }
