@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
+ * main - prints the programs name
  *
+ *@argc: counter
  *
- *
- *
- *
+ *@argv: arrays vector
  */
 int main(int argc, char *argv[])
 {
