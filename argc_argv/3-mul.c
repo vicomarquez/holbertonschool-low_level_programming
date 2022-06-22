@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints all arguments
@@ -22,10 +23,10 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		scanf("%d", &a);
-		scanf("%d", &b);
 		c = a * b;
-		printf("%d\n", c;
+		a = strtol(argv[1], NULL, 10);
+		b = strol(argv[2], NULL, 10);
+		printf("%d\n", c);
+		return (0);
 	}
-	return (0);
 }
