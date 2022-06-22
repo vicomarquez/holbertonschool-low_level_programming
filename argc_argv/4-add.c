@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	long j;
 	char a = '\0';
 	char *b;
-	int c = 1;
+	int c;
 
 	b = &a;
 
@@ -35,5 +35,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%ld\n", j);
-	return(0);
+	return (0);
 }
