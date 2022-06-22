@@ -17,9 +17,9 @@ int _sqrt_recursion(int n)
 	p = &y;
 
 	if (y < 0)
-		return (-1);
+		y = -1;
 	else if (y == 0)
-		return (0);
+		y = 0;
 	else
 		_rec(p, 1);
 	return (y);
