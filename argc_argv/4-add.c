@@ -13,27 +13,29 @@
  */
 int main(int argc, char *argv[])
 {
-	long j;
-	char a = '\0';
-	char *b;
-	int c;
+	long a = 0;
+	int i;
+	char f = '\0';
+	char *p;
 
-	b = &a;
+	p = &f;
 
 	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (c = 1 ; c < argc ; c++)
-	{
-		j += strtol(argv[c], &b, 10);
-		if (*b != '\0')
+		for (i = 1; i < argc; i++)
+		{
+			a += strtol(argv[i], &p, 10);
+			if (*p != '\0')
 		{
 			printf("Error\n");
 			return (1);
 		}
 	}
-	printf("%ld\n", j);
-	return (0);
+
+		printf("%ld\n", a);
+
+		return (0);
 }
