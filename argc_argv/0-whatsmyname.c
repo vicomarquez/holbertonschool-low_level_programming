@@ -6,6 +6,8 @@
  *@argc: counter
  *
  *@argv: arrays vector
+ *
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
