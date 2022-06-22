@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		j = strtol(argv[1], NULL, 10);
 		k = strtol(argv[2], NULL, 10);
-		printf("%d\n", j * k);
+		printf("%ld\n", j * k);
 		return (0);
 	}
 }
