@@ -37,11 +37,11 @@ void _rec(int *p, int j)
 	if (j * j < *p)
 	{
 		j++;
-		_rec(*p, j);
+		_rec(p, j);
 	}
 	else if (j * j == *p)
 		*p = j;
 	else 
 		*p = -1;
 	return;
-
+}
