@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	long j;
-	long k;	
+	long k;
 
 	if (argc < 3)
 	{
