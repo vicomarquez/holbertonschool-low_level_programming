@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	long j;
 	char a = '\0';
 	char *b;
-	int c = 1
+	int c = 1;
 
 	b = &a;
 
@@ -25,9 +25,8 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	while (c < argc)
+	while (c = 1; c < argc ; c++)
 	{
-		c++;
 		j += strtol(argv[c], &b, 10);
 		if (*b != '\0')
 		{
