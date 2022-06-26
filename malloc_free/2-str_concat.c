@@ -3,7 +3,9 @@
 /**
  * *str_concat - concatenates two strings
  *
- *@str: pointer
+ *@s1: pointer
+ *
+ *@s2: pointer
  *
  *Return: NULL
  */
