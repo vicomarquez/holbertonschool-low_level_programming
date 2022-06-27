@@ -3,9 +3,9 @@
 /**
  * *string_nconcat - concatenates two strings
  *
- *@j: integer
- *@k: integer
- *@i: char
+ *@s1: char
+ *@s2: char
+ *@n: integer
  *
  *Return: NULL
  */
@@ -20,11 +20,10 @@ void *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	k = 0;
+	while (s1[k] != '\0')
+		k++;
 
-	for (k = 0 ; s1[k] != '\0' ; k++)
-	{
-	}
-	
 	i = malloc(sizeof(char) * (k + n + 1));
 	if (i == NULL)
 		return (NULL);
@@ -32,7 +31,7 @@ void *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (s1[k] != '\0')
 	{
-		i[k] = s1 [k];
+		i[k] = s1[k];
 		k++;
 	}
 	while (j < n && s2[j] != '\0')
