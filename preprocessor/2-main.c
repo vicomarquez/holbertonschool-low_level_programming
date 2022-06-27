@@ -7,8 +7,6 @@
 
 int main (void)
 {
-	char *s = "HEADER_FILE";
-
-	printf("%s\n", *s);
+	printf("%s\n", __FILE__);
 	return(0);
 }
