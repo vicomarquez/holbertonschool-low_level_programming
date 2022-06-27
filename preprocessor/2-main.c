@@ -7,6 +7,8 @@
 
 int main (void)
 {
-	printf("%s\n", HEADER_FILE);
-	return(0)
+	char *s = HEADER_FILE;
+
+	printf("%s\n", s);
+	return(0);
 }
