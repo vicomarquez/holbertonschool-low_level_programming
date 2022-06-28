@@ -8,7 +8,6 @@
  *@age:dog's age
  *Return: 0
  */
-#endif
 
 struct dog
 {
@@ -16,3 +15,4 @@ struct dog
 	char *owner;
 	float age;
 };
+#endif
