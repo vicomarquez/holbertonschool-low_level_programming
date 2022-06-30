@@ -1,5 +1,8 @@
+#ifndef fpoint
+#define fpoint
 #include "function_pointers.h"
 #include <stdlib.h>
+#endif
 /**
  * print_name - prints a name
  *@name: pointer
