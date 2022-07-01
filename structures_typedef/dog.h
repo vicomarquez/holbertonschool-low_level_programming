@@ -21,5 +21,6 @@ void print_dog(struct dog *d);
 typedef struct dog dog_t;
 void free_dog(dog_t *d);
 int _strlen(char *a);
-char *_strdup(char *str)
+char *_strdup(char *str);
+dog_t *new_dog(char *name, float age, char *owner);
 #endif
