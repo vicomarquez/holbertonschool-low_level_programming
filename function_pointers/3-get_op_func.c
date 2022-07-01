@@ -1,28 +1,29 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 #include <stdio.h>
 #include <stddef.h>
 /**
- * int_index - executes a function
- *@array: pointer
- *@size: pointer
- *@cmp: pointer
+ *get_op_func - executes a function
+ *@s: pointer
  *Return: 0
  */
-int int_index(int *array, int size, int (*cmp)(int))
+
+int (*get_op_func(char *s))(int, int)
 {
-	 int i;
+	   op_t ops[] = {
+		   {"+", op_add},
+		   {"-", op_sub},
+		   {"*", op_mul},
+		   {"/", op_div},
+		   {"%", op_mod},
+		   {NULL, NULL}
+	   };
+	   int i;
 
-	if (size <= 0)
-		return (-1);
-
-	if (array && cmp)
-	{
-		while (i < size)
-		{
-			if (cmp(array[i]))
-				return (i);
-			i++;
-		}
-	}
-	return (-1);
+	   while (ops[i].op)
+	   {
+		   if (ops[i].op == s || s++ == NULL)
+			   return (ops[i].f);
+		   i++;
+	   }
+	   return (0);
 }
