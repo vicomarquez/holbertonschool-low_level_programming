@@ -16,10 +16,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - Substracts 
+ * op_sub - Substracts
  * @a: integer
  * @b: integer
- * Return: difference of integers 
+ * Return: difference of integers
  */
 
 int op_sub(int a, int b)
