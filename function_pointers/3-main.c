@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	res = hi(atoi(argv[1], atoi(argv[3])));
+	res = hi(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", res);
 	return (0);
 }
