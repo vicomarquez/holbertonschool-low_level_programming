@@ -3,8 +3,8 @@
 #include <stddef.h>
 /**
  * main - executes a function
- *@array: pointer
- *@size: pointer
+ *@argc: pointer
+ *@argv: pointer
  *Return: 0
  */
 int main(int argc, char *argv[])
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	hi = get_op_func(argv[2]);
 
-	if(!hi)
+	if (!hi)
 	{
 		printf("Error\n");
 		exit(99);
