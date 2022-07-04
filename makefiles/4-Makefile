@@ -6,7 +6,6 @@ RM = rm -f
 CFLAGS: -Wall -Werror -Wextra -pedantic
 all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-	$(CC) $(CFLAGS) $(OBJ) -o holberton
 clean:
 	$(RM) *~ $(NAME)
 oclean:
