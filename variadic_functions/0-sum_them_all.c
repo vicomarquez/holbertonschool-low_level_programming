@@ -4,7 +4,7 @@
 /**
  * sum_them_all - sums all parameters
  *
- *@n - unsigned int
+ *@n - integer
  *
  *Return: sum
  *
@@ -19,11 +19,11 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 
-	va_start (num, n);
+	va_start(num, n);
 
 	for (j = 0 ; j < n ; j++)
-		sum += va_arg (num, int);
+		sum += va_arg(num, int);
 
-	va_end (num);
+	va_end(num);
 	return (sum);
 }
