@@ -3,8 +3,8 @@
 
 /**
  * sum_them_all - sums all parameters
+ * @n: numbers in function
  *
- * @n - numbers in function
  *
  *Return: sum
  *
