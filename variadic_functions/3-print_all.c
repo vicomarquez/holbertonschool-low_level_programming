@@ -14,12 +14,12 @@ void print_all(const char * const format, ...)
 {
 	va_list arg;
 	unsigned int j;
-	char *k, *s;
+	char *s;
 	double f;
 	int c, i;
 
 	va_start(arg, format);
-	while (format[j] != NULL)
+	while (format[j] != '\0')
 	{	
 		c = va_arg(arg, int);
 		i = va_arg(arg, int);
@@ -37,11 +37,12 @@ void print_all(const char * const format, ...)
 			case 2:
 				printf("%f", f);
 			case 3:
-				if (format[j] == NULL)
+				if (format[j] == '\0')
+				{
 					printf("(nil)");
-				break;
-				else
-					printf("%s", s);
+					break;
+				}
+				printf("%s", s);
 				break;
 		}
 		printf(", ");
