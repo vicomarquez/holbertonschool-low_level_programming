@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 					break;
 				}
-				printf("%s", va_arg(arg, char *);
+				printf("%s", va_arg(arg, char *));
 				break;
 		}
 		printf(", ");
