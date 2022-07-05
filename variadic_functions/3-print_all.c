@@ -14,28 +14,30 @@ void print_all(const char * const format, ...)
 {
 	va_list arg;
 	unsigned int j = 0;
+	char *k;
 
 	va_start(arg, format);
 	while (format && format[j] != '\0')
 	{
 		switch (format[j])
 		{
-			case 0:
+			case 'c':
 				printf("%c", va_arg(arg, int));
 				break;
-			case 1:
+			case 'i':
 				printf("%d", va_arg(arg, int));
 				break;
-			case 2:
+			case 'f':
 				printf("%f", va_arg(arg, double));
 				break;
-			case 3:
+			case 's':
+				k = va_arg(arg, char*);
 				if (format[j] == '\0')
 				{
 					printf("(nil)");
 					break;
 				}	
-				printf("%s", va_arg(arg, char *));
+				printf("%s", k);
 				break;
 			default:
 				j++;
