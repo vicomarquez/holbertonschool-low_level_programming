@@ -36,6 +36,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 2:
 				printf("%f", f);
+				break;
 			case 3:
 				if (format[j] == '\0')
 				{
