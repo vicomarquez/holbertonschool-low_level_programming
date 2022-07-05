@@ -37,8 +37,6 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", va_arg(arg, char *));
 				break;
-			default:
-
 		}
 		printf(", ");
 		j++;
