@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 	int j = 0;
 
 	va_start(arg, format);
-	while (format && format[j] != '\0')
+	while (format != 0 && format[j] != 0)
 	{
 		switch (format[j])
 		{
@@ -37,6 +37,8 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", va_arg(arg, char *));
 				break;
+			default:
+
 		}
 		printf(", ");
 		j++;
