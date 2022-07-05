@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				k = va_arg(arg, char*);
-				if (format[j] == '\0')
+				if (s == '\0')
 				{
 					printf("(nil)");
 					break;
