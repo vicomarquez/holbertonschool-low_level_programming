@@ -14,7 +14,9 @@ void print_all(const char * const format, ...)
 {
 	va_list arg;
 	unsigned int j;
-	char *k, *c, *i, *f, *s;
+	char *k, *s;
+	double f;
+	int c, i;
 
 	va_start(arg, format);
 	while (format[j] != NULL)
