@@ -2,25 +2,24 @@
 #include <stdio.h>
 
 /**
- *print_list - prints all the elements of a list_t list
+ * print_list - prints all the elements of a list_t list
  *
- *@h: 
+ * @h: pointer to head
  *
+ * Return: nodes
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t node = 0;
+	unsigned int i = 0;
 	
-	if (h == NULL)
-		return (0);
-
-	if (h->str == NULL)
-		printf("[0] (nil)\n");
-	else
-		printf("[%d] %s\n", h->len, h->str);
-	node += 1;
-	h = h->next;
-
-return (node);
+	for (; h != NULL ; i++)
+	{
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+	}
+	return (i);
 }
