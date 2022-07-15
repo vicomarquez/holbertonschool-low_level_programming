@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node - adds a new node a the beginning of a linked list
@@ -20,11 +21,11 @@ list_t *add_node(list_t **head, const char *str)
 	if (head == NULL && str == NULL)
 		return (NULL);
 	for (; str[i] ; i++)
-		return;
+		;
 
-	new = malloc(sizeof(struct list_t));
-	new-> str = strdup(str);
-	new-> next = *head;
+	new = malloc(sizeof(list_t));
+	new->str = strdup(str);
+	new->next = *head;
 	*head = new;
 	
 	return (new);
