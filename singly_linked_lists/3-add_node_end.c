@@ -17,14 +17,22 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	int i = 0;
 	list_t *new;
-	*head = NULL;
+
+	new = NULL;
+
+	for (; str[i] ; i++)
+		;
+
+	if (head == NULL && str == NULL)
+		return (NULL);
 
 	new = malloc(sizeof(list_t));
-	if (*head == NULL)
-		*head = new;
+	if (new == NULL)
+		return (NULL);
 
 	new->str = strdup(str);
 	new->len = i;
+
 	new->next = *head;
 	*head = new;
 
