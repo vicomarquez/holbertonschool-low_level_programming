@@ -21,8 +21,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[length] != '0' && b[length] != '1')
 			return (0);
-		else
-			length++;
 	}
 	while (i < length)
 	{
