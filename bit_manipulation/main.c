@@ -8,9 +8,10 @@
  */
 int main(void)
 {
-	int n;
+	unsigned long int n;
 
-	n = get_bit('A', 'j');
-	printf("%d\n", n);
+	n = 1024;
+	set_bit(&n, 5);
+	printf("%lu\n", n);
 	return (0);
 }
