@@ -8,10 +8,11 @@
  */
 int main(void)
 {
-	unsigned long int n;
+	unsigned int n;
 
-	n = 1024;
-	clear_bit(&n, 10);
-	printf("%lu\n", n);
+	n = flip_bits(1024, 1);
+	printf("%u\n", n);
+	n = flip_bits(402, 98);
+	printf("%u\n", n);
 	return (0);
 }
