@@ -8,13 +8,9 @@
  */
 int main(void)
 {
-	unsigned int n;
+	int n;
 
-	print_binary(0);
-	printf("\n");
-	print_binary(1);
-	printf("\n");
-	print_binary(98);
-	printf("\n");
+	n = get_bit('A', 'j');
+	printf("%d\n", n);
 	return (0);
 }
