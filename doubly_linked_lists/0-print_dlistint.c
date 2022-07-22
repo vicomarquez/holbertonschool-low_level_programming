@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-/* 
+/*
  * size_t -  prints all the elements of a doubly linked list
  * @h: pointer
  *
