@@ -3,39 +3,19 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * add_dnodeint_end - adds a new node at the end of a doubly linked list.
+ * free_dlistint - frees a doubly linked list.
  *
  * @head: head pointer
- * @n: integer
- *
- * Return: the address of new element or NULL
  */
 
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *new = NULL, *temp = NULL;
+	dlistint_t *new;
 
-	if (head == NULL)
-		return (NULL);
-
-	temp = *head;
-
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
-		return (NULL);
-	new->n = n;
-	new->next = NULL;
-	new->prev = NULL;
-
-	if (*head == NULL)
+	while (head != NULL)
 	{
-		*head = new;
-		return (*head);
+		new = head;
+		head = head->next;
+		free(new);
 	}
-	while (temp->next != NULL)
-		temp = temp->next;
-	temp->next = new;
-	new->prev = temp;
-
-	return (*head);
 }
