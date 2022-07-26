@@ -19,7 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		sasha->name = _strdup(name);
 		sasha->age = age;
 		sasha->owner = _strdup(owner);
-		if (sasha->owner == NULL|| sasha->name == NULL)
+		if (sasha->name == NULL|| sasha->owner == NULL)
 		{
 			free(sasha->name);
 			free(sasha->owner);
@@ -31,12 +31,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 }
 
 /**
- *  * *_strdup - duplicates a string
- *   *
- *    *@str: pointer
- *     *
- *      *Return: NULL
- *       */
+ * *_strdup - duplicates a string
+ *
+ *@str: pointer
+ *
+ *Return: NULL
+ */
 
 char *_strdup(char *str)
 {
@@ -74,89 +74,3 @@ int _strlen(char *a)
 		j++;
 	return (j);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
