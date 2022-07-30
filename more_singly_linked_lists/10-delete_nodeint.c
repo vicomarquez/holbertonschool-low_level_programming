@@ -3,11 +3,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * delete_nodeint_at_index - returns a sum of the data of a linked list
+ * delete_nodeint_at_index - deletes a node
  *
  * @head: pointer to head
- * @idx: integer
- * @n: integer
+ * @index: integer
  *
  * Return: if empty return 0
  */
@@ -21,7 +20,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		return (-1);
 	if (index == 0)
 	{
-		new->next = *head;
+		*head = new->next;
 		free(new);
 		return (1);
 	}
@@ -30,7 +29,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		new = new->next;
 		if (new == NULL)
-			return(-1);
+			return (-1);
 		j++;
 	}
 	delete = new->next;
@@ -38,5 +37,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	new->next = new->next->next;
 
 	free(delete);
+
 	return (1);
 }
