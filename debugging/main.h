@@ -22,3 +22,4 @@ void print_square(int size);
 void print_triangle(int size);
 int largest_number();
 void print_remaining_days();
+int convert_day(int, int);
