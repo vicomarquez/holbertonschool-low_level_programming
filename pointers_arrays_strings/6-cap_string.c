@@ -9,7 +9,7 @@ char *cap_string(char *a)
 	int i = 0;
 	int length = _strlen(a);
 
-	for (; i < len; i++)
+	for (; i < length; i++)
 	{
 		if (i == 0 && a[i] >= 'a' && a[i] <= 'z')
 			a[i] = a[i] - 32;
