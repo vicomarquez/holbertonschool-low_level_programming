@@ -2,6 +2,7 @@
 /**
  * string_toupper - reverses content of an array of integers
  * @a: character to check
+ * Return: always 0
  */
 char *string_toupper(char *a)
 {
