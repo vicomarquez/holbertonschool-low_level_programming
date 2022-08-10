@@ -1,24 +1,25 @@
 #include "main.h"
 /**
- ** *leet - copies a string
- *@dest: character to check
- *@src: character to check
- *@n: integer
- *Return: the length of a string
+ * leet - reverses content of an array of integers
+ * @a: character to check
+ * Return: always 0
  */
-char *leet(char *s)
+char *leet(char *a)
 {
-	int i;
-	int j;
-	
-	char mariah[] = {'O', 'L', '~', 'E', 'A', '~', '~', 'T'};	
+	int i, j;
 
-	for (i = 0; s[i] != '\0'; i++)
+	char u[] = {'A', 'E', 'O', 'T', 'L'};
+	char l[] = {'a', 'e', 'o', 't', 'l'};
+	char n[] = {'4', '3', '0', '7', '1'};
+
+	for (i = 0; a[i] != '\0'; i++)
 	{
-		for (j = 0 ; j < 8 ; j++)
-	{
-		if (s[i] == mariah[j])
-			s[i] = j + 0;
+		for (j = 0; j < 5; j++)
+		{
+			if (a[i] == u[j] || a[i] == l[j])
+				a[i] = n[j];
+
+		}
 	}
-	return (dest);
+	return (a);
 }
